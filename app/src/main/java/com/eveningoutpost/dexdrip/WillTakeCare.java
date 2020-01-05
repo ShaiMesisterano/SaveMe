@@ -52,20 +52,12 @@ public class WillTakeCare extends BaseAppCompatActivity {
     }
 
     private String getBgValue() {
-        final double a = BgReading.activePrediction();
-        String result1 = String.valueOf(a);
+        final BestGlucose.DisplayGlucose dg = BestGlucose.getDisplayGlucose();
+        if (dg == null) return "Cannot read value";
+        String result = String.valueOf(dg.mgdl);
+        Log.d("*** result", result);
 
-        List<BgReading> bgReadingList = BgReading.latest(1, true);
-        String result2 = String.valueOf(bgReadingList.get(0));
-
-        final BgReading lastBgReading = BgReading.lastNoSenssor();
-        String result3 = String.valueOf(lastBgReading.filtered_calculated_value);
-
-        Log.d("*** result1", result1);
-        Log.d("*** result2", result2);
-        Log.d("*** result3", result3);
-
-        return result1;
+        return result;
     }
 
     public void openTrip(View view) {

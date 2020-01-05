@@ -97,7 +97,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".WillTakeCare" />
-        <activity android:name=".MyTripsActivity" />
         <activity
             android:name=".BluetoothScan"
             android:configChanges="orientation|screenSize"
