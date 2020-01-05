@@ -2,15 +2,18 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <android.support.v4.widget.DrawerLayout
+    <RelativeLayout
 
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/my_trips_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="test"
         android:background="@drawable/trips_critical_alerts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -32,6 +35,6 @@
         app:layout_constraintVertical_bias="0.534"
         android:visibility="visible" />
 
-    </android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
 
 </layout>

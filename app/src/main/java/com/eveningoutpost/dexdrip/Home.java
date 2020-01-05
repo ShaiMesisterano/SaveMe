@@ -3645,7 +3645,7 @@ public class Home extends ActivityWithMenu implements ActivityCompat.OnRequestPe
     }
 
     public void openMyTrips(View view) {
-        Intent intent = new Intent(this, MyTripsActivity.class);
+        Intent intent = new Intent(this, WillTakeCare.class);
         startActivity(intent);
     }
 

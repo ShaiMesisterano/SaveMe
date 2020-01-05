@@ -96,7 +96,7 @@
                 <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TripActivity" />
+        <activity android:name=".WillTakeCare" />
         <activity android:name=".MyTripsActivity" />
         <activity
             android:name=".BluetoothScan"
